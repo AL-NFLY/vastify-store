@@ -1,4 +1,5 @@
 import MaxWidthWrapper from '@/components/MaxWidthWrapper'
+import Navbar from '@/components/Navbar';
 import { Button, buttonVariants } from '@/components/ui/button'
 import Image from 'next/image'
 import Link from 'next/link'
@@ -33,6 +34,7 @@ const perks: PerksProps[] = [
 export default function Home() {
   return (
     <>
+      <Navbar />
       <MaxWidthWrapper>
         <div className='py-20 mx-auto flex flex-col text-center items-center max-w-3xl'>
           <h1 className='text-3xl md:text-4xl font-bold'>Vastify Store</h1>
