@@ -1,5 +1,6 @@
 import Link from "next/link"
 import MaxWidthWrapper from "./MaxWidthWrapper"
+import NavItems from "./NavItems"
 
 const Navbar = () => {
   return (
@@ -18,6 +19,10 @@ const Navbar = () => {
                         >
                         VS
                         </Link>
+                    </div>
+
+                    <div className="hidden lg:block z-50 lg:ml-8 lg:self-stretch">
+                        <NavItems />
                     </div>
                 </div>
             </MaxWidthWrapper>
