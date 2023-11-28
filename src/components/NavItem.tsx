@@ -1,6 +1,12 @@
+import { Button } from "./ui/button"
+
 const NavItem = () => {
   return (
-    <div>NavItem</div>
+    <div className="flex">
+        <div className="relative flex items-center">
+            <Button className="gap-1.5"></Button>
+        </div>
+    </div>
   )
 }
 
