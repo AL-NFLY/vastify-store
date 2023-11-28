@@ -7,10 +7,10 @@ const Navbar = () => {
     <header className="sticky z-50 top-0 inset-x-0 h-1/6">
         <nav className="relative bg-white">
             <MaxWidthWrapper>
-                <div className="border-b border-gray-200">
-                    <div className="flex h-16 items-center">
+                <div className="border-b border-gray-200 flex items-center justify-between p-3">
+                    {/* <div className="flex h-16 items-center">
 
-                    </div>
+                    </div> */}
 
                     <div className="flex ml-4 lg:ml-0">
                         <Link
