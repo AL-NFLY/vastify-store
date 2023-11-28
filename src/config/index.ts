@@ -6,17 +6,17 @@ export const PRODUCT_CATEGORIES = [
             {
                 name: 'Aqua',
                 href: '#',
-                imageSrc: '',
+                imageSrc: '/nav/collections/aqua-collection.png',
             },
             {
                 name: 'Oud',
                 href: '#',
-                imageSrc: '',
+                imageSrc: '/nav/collections/oud-collection.png',
             },
             {
                 name: 'Baccarat Rouge 540',
                 href: '#',
-                imageSrc: '',
+                imageSrc: '/nav/collections/baccarat-collection.png',
             },
         ],
     },
@@ -27,17 +27,17 @@ export const PRODUCT_CATEGORIES = [
             {
                 name: 'Mens Fragrances',
                 href: '#',
-                imageSrc: '',
+                imageSrc: '/nav/fragrances/mens-fragrances.png',
             },
             {
                 name: 'Womens Fragrances',
                 href: '#',
-                imageSrc: '',
+                imageSrc: '/nav/fragrances/womens-fragrances.png',
             },
             {
                 name: 'Unisex Fragrances',
                 href: '#',
-                imageSrc: '',
+                imageSrc: '/nav/fragrances/unisex-fragrances.png',
             },
         ],
     },
