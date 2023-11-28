@@ -25,7 +25,7 @@ const NavItem = ({category, handleOpen, isAnyOpen, isOpen}: NavItemProps) => {
             >
                 {category.label}
                 <FaChevronDown className={cn(
-                    'h-4 w-4 transition-all text-muted-foreground',
+                    'h-3 w-auto transition-all text-muted-foreground',
                     {
                         '-rotate-180': isOpen,
                     }
