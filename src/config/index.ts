@@ -17,7 +17,28 @@ export const PRODUCT_CATEGORIES = [
                 name: 'Baccarat Rouge 540',
                 href: '#',
                 imageSrc: '',
-            }
-        ] 
-    }
+            },
+        ],
+    },
+    {
+        label: 'Fragrances',
+        value: 'fragrances' as const,
+        featured: [
+            {
+                name: 'Mens Fragrances',
+                href: '#',
+                imageSrc: '',
+            },
+            {
+                name: 'Womens Fragrances',
+                href: '#',
+                imageSrc: '',
+            },
+            {
+                name: 'Unisex Fragrances',
+                href: '#',
+                imageSrc: '',
+            },
+        ],
+    },
 ]
