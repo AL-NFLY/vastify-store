@@ -21,7 +21,7 @@ export const PRODUCT_CATEGORIES = [
         ],
     },
     {
-        label: 'Fragrances',
+        label: 'FRAGRANCES',
         value: 'fragrances' as const,
         featured: [
             {
