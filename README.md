@@ -1,3 +1,6 @@
 # Vastify Store
 
-Tech Stack
+Tech Stack:
+- Typescript
+- Next.js 14
+- TailwindCSS
