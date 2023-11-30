@@ -1,7 +1,6 @@
 import MaxWidthWrapper from '@/components/MaxWidthWrapper'
 import Navbar from '@/components/Navbar';
 import { Button, buttonVariants } from '@/components/ui/button'
-import Image from 'next/image'
 import Link from 'next/link'
 import { IconType } from "react-icons";
 import { FaHandHoldingDollar, FaTruck, FaShield } from "react-icons/fa6";
