@@ -9,3 +9,4 @@ Tech Stack:
 
 TODOs:
 - [x] Add Hero section
+- [ ] Add Navbar & its interactivity 
