@@ -8,3 +8,4 @@ Tech Stack:
 - tRPC
 
 TODOs:
+- [x] Add Hero section
