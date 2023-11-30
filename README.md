@@ -5,7 +5,7 @@ Tech Stack:
 - Next.js 14
 - TailwindCSS
 - Shadcn-ui
-- tRPC
+- tRPC (To Be Added)
 
 TODOs:
 - [ ] Add Navbar & its interactivity 
