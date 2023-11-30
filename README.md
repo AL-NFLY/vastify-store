@@ -5,3 +5,4 @@ Tech Stack:
 - Next.js 14
 - TailwindCSS
 - Shadcn-ui
+- tRPC
