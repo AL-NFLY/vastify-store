@@ -6,3 +6,5 @@ Tech Stack:
 - TailwindCSS
 - Shadcn-ui
 - tRPC
+
+TODOs:
