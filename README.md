@@ -8,5 +8,5 @@ Tech Stack:
 - tRPC
 
 TODOs:
-- [x] Add Hero section
 - [ ] Add Navbar & its interactivity 
+- [x] ~~Add Hero section~~
