@@ -51,11 +51,11 @@ const NavItem = ({category, handleOpen, isAnyOpen, isOpen}: NavItemProps) => {
 
                     <div className="relative bg-white">
                         <div className="mx-auto max-w-full px-8">
-                            <div className="col-span-3 col-start-1 grid grid-cols-3 gap-x-80 py-6">
+                            <div className="col-span-3 col-start-1 grid grid-cols-3 gap-x-12 py-6">
                                 {category.featured.map((item) => (
                                     <div
                                     key={item.name}
-                                    className="group relative flex items-center text-center text-base"
+                                    className="group relative flex items-center text-base"
                                     >
                                         <div className="relative aspect-square overflow-hidden rounded-lg w-16 h-auto group-hover:opacity-75">
                                             <Image
