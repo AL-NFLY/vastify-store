@@ -50,7 +50,7 @@ const NavItem = ({category, handleOpen, isAnyOpen, isOpen}: NavItemProps) => {
                         />
 
                     <div className="relative bg-white">
-                        <div className="col-span-3 col-start-1 grid grid-cols-3 gap-x-12 py-3">
+                        <div className="col-span-3 col-start-1 grid grid-cols-3 gap-x-12 py-6">
                             {category.featured.map((item) => (
                                 <div
                                 key={item.name}
