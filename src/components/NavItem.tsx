@@ -4,6 +4,7 @@ import { PRODUCT_CATEGORIES } from "@/config"
 import { Button } from "./ui/button"
 import { FaChevronDown } from "react-icons/fa6"
 import { cn } from "@/lib/utils"
+import Image from "next/image"
 
 type Category = (typeof PRODUCT_CATEGORIES)[number]
 
@@ -55,8 +56,14 @@ const NavItem = ({category, handleOpen, isAnyOpen, isOpen}: NavItemProps) => {
                                         className="group relative text-base md:text-sm"
                                     >
                                         <div className="relative aspect-video overflow-hidden rounded-lg bg-gray-100 group-hover:opacity-75">
-                                    
+                                            <Image
+                                                src={item.href}
+                                                alt="Product Category Image"
+                                                fill
+                                                className="object-cover object-center"
+                                            />
                                         </div>
+
                                     </div>
                                 ))}
                             </div>
