@@ -44,36 +44,31 @@ const NavItem = ({category, handleOpen, isAnyOpen, isOpen}: NavItemProps) => {
                 }
             )}>
                 <MaxWidthWrapper>
-                    <div 
-                        className="absolute inset-0 top-1/2 bg-white shadow"
-                        aria-hidden='true' 
-                        />
-
                     <div className="relative bg-white">
-                            <div className="col-span-3 col-start-1 grid grid-cols-3 gap-x-12 py-6">
-                                {category.featured.map((item) => (
-                                    <div
-                                    key={item.name}
-                                    className="group relative flex items-center text-base"
-                                    >
-                                        <div className="relative aspect-square overflow-hidden rounded-lg w-16 h-auto group-hover:opacity-75">
-                                            <Image
-                                                src={item.imageSrc}
-                                                alt="Product Category Image"
-                                                fill
-                                                className="object-cover object-center"
-                                                />
-                                        </div>
-
-                                        <Link
-                                            href={item.href}
-                                            className="px-4 block font-medium text-gray-900"
-                                            >
-                                            {item.name}
-                                        </Link>
+                        <div className="col-span-3 col-start-1 grid grid-cols-3 gap-x-12 py-3">
+                            {category.featured.map((item) => (
+                                <div
+                                key={item.name}
+                                className="group relative flex items-center text-base"
+                                >
+                                    <div className="relative aspect-square overflow-hidden rounded-lg w-16 h-auto group-hover:opacity-75">
+                                        <Image
+                                            src={item.imageSrc}
+                                            alt="Product Category Image"
+                                            fill
+                                            className="object-cover object-center"
+                                            />
                                     </div>
-                                ))}
-                            </div>
+
+                                    <Link
+                                        href={item.href}
+                                        className="px-4 block font-medium text-gray-900"
+                                        >
+                                        {item.name}
+                                    </Link>
+                                </div>
+                            ))}
+                        </div>
 ``                    </div>
                 </MaxWidthWrapper>
             </div>
