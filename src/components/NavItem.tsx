@@ -5,6 +5,7 @@ import { Button } from "./ui/button"
 import { FaChevronDown } from "react-icons/fa6"
 import { cn } from "@/lib/utils"
 import Image from "next/image"
+import Link from "next/link"
 
 type Category = (typeof PRODUCT_CATEGORIES)[number]
 
@@ -64,6 +65,12 @@ const NavItem = ({category, handleOpen, isAnyOpen, isOpen}: NavItemProps) => {
                                             />
                                         </div>
 
+                                        <Link
+                                            href={item.href}
+                                            className="mt-6 block font-medium text-gray-900"
+                                        >
+                                            {item.name}
+                                        </Link>
                                     </div>
                                 ))}
                             </div>
