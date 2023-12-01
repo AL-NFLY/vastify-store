@@ -51,34 +51,31 @@ const NavItem = ({category, handleOpen, isAnyOpen, isOpen}: NavItemProps) => {
 
                     <div className="relative bg-white">
                         <div className="mx-auto max-w-full px-8">
-                            <div className="grid grid-cols-4 gap-x-8 gap-y-10 py-16">
-                                <div className="col-span-4 col-start-1 grid grid-cols-3 gap-x-80">
-                                    {category.featured.map((item) => (
-                                        <div
-                                        key={item.name}
-                                        className="group relative flex items-center text-center text-base"
-                                        >
-                                            <div className="relative aspect-square overflow-hidden rounded-lg w-16 h-auto group-hover:opacity-75">
-                                                <Image
-                                                    src={item.imageSrc}
-                                                    alt="Product Category Image"
-                                                    fill
-                                                    className="object-cover object-center"
-                                                    />
-                                            </div>
-
-                                            <Link
-                                                href={item.href}
-                                                className="px-4 block font-medium text-gray-900"
-                                                >
-                                                {item.name}
-                                            </Link>
+                            <div className="col-span-3 col-start-1 grid grid-cols-3 gap-x-80 py-6">
+                                {category.featured.map((item) => (
+                                    <div
+                                    key={item.name}
+                                    className="group relative flex items-center text-center text-base"
+                                    >
+                                        <div className="relative aspect-square overflow-hidden rounded-lg w-16 h-auto group-hover:opacity-75">
+                                            <Image
+                                                src={item.imageSrc}
+                                                alt="Product Category Image"
+                                                fill
+                                                className="object-cover object-center"
+                                                />
                                         </div>
-                                    ))}
-                                </div>
+
+                                        <Link
+                                            href={item.href}
+                                            className="px-4 block font-medium text-gray-900"
+                                            >
+                                            {item.name}
+                                        </Link>
+                                    </div>
+                                ))}
                             </div>
                         </div>
-
                     </div>
                 </MaxWidthWrapper>
             </div>
