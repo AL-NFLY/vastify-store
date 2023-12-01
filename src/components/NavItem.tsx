@@ -74,7 +74,7 @@ const NavItem = ({category, handleOpen, isAnyOpen, isOpen}: NavItemProps) => {
                                 </div>
                             ))}
                         </div>
-``                    </div>
+                    </div>
                 </MaxWidthWrapper>
             </div>
         ) : null}
