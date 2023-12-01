@@ -50,7 +50,6 @@ const NavItem = ({category, handleOpen, isAnyOpen, isOpen}: NavItemProps) => {
                         />
 
                     <div className="relative bg-white">
-                        <div className="mx-auto max-w-full px-8">
                             <div className="col-span-3 col-start-1 grid grid-cols-3 gap-x-12 py-6">
                                 {category.featured.map((item) => (
                                     <div
@@ -75,8 +74,7 @@ const NavItem = ({category, handleOpen, isAnyOpen, isOpen}: NavItemProps) => {
                                     </div>
                                 ))}
                             </div>
-                        </div>
-                    </div>
+``                    </div>
                 </MaxWidthWrapper>
             </div>
         ) : null}
