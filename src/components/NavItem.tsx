@@ -6,6 +6,7 @@ import { FaChevronDown } from "react-icons/fa6"
 import { cn } from "@/lib/utils"
 import Image from "next/image"
 import Link from "next/link"
+import MaxWidthWrapper from "./MaxWidthWrapper"
 
 type Category = (typeof PRODUCT_CATEGORIES)[number]
 
@@ -42,42 +43,44 @@ const NavItem = ({category, handleOpen, isAnyOpen, isOpen}: NavItemProps) => {
                     'animate-in fade-in-10 slide-in-from-top-5': !isAnyOpen,
                 }
             )}>
-                <div 
-                    className="absolute inset-0 top-1/2 bg-white shadow"
-                    aria-hidden='true' 
-                />
+                <MaxWidthWrapper>
+                    <div 
+                        className="absolute inset-0 top-1/2 bg-white shadow"
+                        aria-hidden='true' 
+                        />
 
-                <div className="relative bg-white">
-                    <div className="mx-auto max-w-7xl px-8">
-                        <div className="grid grid-cols-4 gap-x-8 gap-y-10 py-16">
-                            <div className="col-span-4 col-start-1 grid grid-cols-3 gap-x-8">
-                                {category.featured.map((item) => (
-                                    <div
+                    <div className="relative bg-white">
+                        <div className="mx-auto max-w-full px-8">
+                            <div className="grid grid-cols-4 gap-x-8 gap-y-10 py-16">
+                                <div className="col-span-4 col-start-1 grid grid-cols-3 gap-x-80">
+                                    {category.featured.map((item) => (
+                                        <div
                                         key={item.name}
-                                        className="group relative text-base md:text-sm"
-                                    >
-                                        <div className="relative aspect-video overflow-hidden rounded-lg bg-gray-100 group-hover:opacity-75">
-                                            <Image
-                                                src={item.imageSrc}
-                                                alt="Product Category Image"
-                                                fill
-                                                className="object-cover object-center"
-                                            />
-                                        </div>
-
-                                        <Link
-                                            href={item.href}
-                                            className="mt-6 block font-medium text-gray-900"
+                                        className="group relative flex items-center text-center text-base"
                                         >
-                                            {item.name}
-                                        </Link>
-                                    </div>
-                                ))}
+                                            <div className="relative aspect-square overflow-hidden rounded-lg w-16 h-auto group-hover:opacity-75">
+                                                <Image
+                                                    src={item.imageSrc}
+                                                    alt="Product Category Image"
+                                                    fill
+                                                    className="object-cover object-center"
+                                                    />
+                                            </div>
+
+                                            <Link
+                                                href={item.href}
+                                                className="px-4 block font-medium text-gray-900"
+                                                >
+                                                {item.name}
+                                            </Link>
+                                        </div>
+                                    ))}
+                                </div>
                             </div>
                         </div>
-                    </div>
 
-                </div>
+                    </div>
+                </MaxWidthWrapper>
             </div>
         ) : null}
     </div>
