@@ -57,7 +57,7 @@ const NavItem = ({category, handleOpen, isAnyOpen, isOpen}: NavItemProps) => {
                                     >
                                         <div className="relative aspect-video overflow-hidden rounded-lg bg-gray-100 group-hover:opacity-75">
                                             <Image
-                                                src={item.href}
+                                                src={item.imageSrc}
                                                 alt="Product Category Image"
                                                 fill
                                                 className="object-cover object-center"
