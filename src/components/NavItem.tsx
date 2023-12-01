@@ -44,6 +44,11 @@ const NavItem = ({category, handleOpen, isAnyOpen, isOpen}: NavItemProps) => {
                 }
             )}>
                 <MaxWidthWrapper>
+                    <div 
+                        className="absolute inset-0 top-1/2 bg-white shadow"
+                        aria-hidden='true' 
+                        />
+
                     <div className="relative bg-white">
                         <div className="col-span-3 col-start-1 grid grid-cols-3 gap-x-12 py-3">
                             {category.featured.map((item) => (
