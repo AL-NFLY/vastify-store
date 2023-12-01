@@ -50,9 +50,9 @@ const NavItem = ({category, handleOpen, isAnyOpen, isOpen}: NavItemProps) => {
                         />
 
                     <div className="relative bg-white">
-                        <div className="col-span-3 col-start-1 grid grid-cols-3 gap-x-12 py-6">
+                        <ul className="col-span-3 col-start-1 grid grid-cols-3 gap-x-12 py-6">
                             {category.featured.map((item) => (
-                                <div
+                                <li
                                 key={item.name}
                                 className="group relative flex items-center text-base"
                                 >
@@ -71,9 +71,9 @@ const NavItem = ({category, handleOpen, isAnyOpen, isOpen}: NavItemProps) => {
                                         >
                                         {item.name}
                                     </Link>
-                                </div>
+                                </li>
                             ))}
-                        </div>
+                        </ul>
                     </div>
                 </MaxWidthWrapper>
             </div>
