@@ -58,6 +58,15 @@ const Navbar = () => {
                                     SIGN UP
                                 </Link>
                                 )}
+
+                            {user ? null : (
+                                <span 
+                                    aria-hidden='true'
+                                    className="h-6 w-px bg-gray-200"
+                                />
+                            )}
+
+                            
                         </div>
                     </div>
                 </div>
