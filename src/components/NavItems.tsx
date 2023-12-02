@@ -9,7 +9,7 @@ const NavItems = () => {
   const [activeIndex, setActiveIndex] = useState<null | number>(null)
   const isAnyOpen = activeIndex !== null
 
-  // Press Esc to escape navitems 
+  // Press Esc to escape NavItems
   useEffect(() => {
     const handler = (e: KeyboardEvent) => {
       if (e.key === 'Escape') {
@@ -22,6 +22,7 @@ const NavItems = () => {
     }
   }, [])
   
+  // Click outside element to escape NavItems
   const navRef = useRef<HTMLDivElement | null>(null)
   useOnClickOutside(navRef, () => setActiveIndex(null))
 
