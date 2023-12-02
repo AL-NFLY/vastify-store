@@ -56,18 +56,18 @@ const NavItem = ({category, handleOpen, isAnyOpen, isOpen}: NavItemProps) => {
                                 key={item.name}
                                 className="group relative flex items-center text-base"
                                 >
-                                    <div className="relative aspect-square overflow-hidden rounded-lg w-16 h-auto group-hover:opacity-75">
+                                    <div className="relative aspect-square overflow-hidden rounded-lg w-16 h-auto">
                                         <Image
                                             src={item.imageSrc}
                                             alt="Product Category Image"
                                             fill
-                                            className="object-cover object-center"
+                                            className="object-cover object-center cursor-pointer"
                                             />
                                     </div>
 
                                     <Link
                                         href={item.href}
-                                        className="px-4 block font-medium text-gray-900"
+                                        className="ml-3 block font-medium text-gray-900 bg-gradient-to-r from-primary to-rose-900 bg-bottom bg-no-repeat bg-[length:0_1.5px] group-hover:bg-[length:100%_1.5px] duration-200"
                                         >
                                         {item.name}
                                     </Link>
