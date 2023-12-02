@@ -2,6 +2,7 @@ import Link from "next/link"
 import MaxWidthWrapper from "./MaxWidthWrapper"
 import NavItems from "./NavItems"
 import { buttonVariants } from "./ui/button"
+import Carts from "./Carts"
 
 const Navbar = () => {
   const user = null
@@ -75,7 +76,9 @@ const Navbar = () => {
                                 </div>
                             )}
 
-
+                            <div className="flow-root ml-4 lg:ml-6">
+                                <Carts />
+                            </div>
                         </div>
                     </div>
                 </div>
