@@ -59,14 +59,23 @@ const Navbar = () => {
                                 </Link>
                                 )}
 
-                            {user ? null : (
+                            {user ? (
                                 <span 
                                     aria-hidden='true'
                                     className="h-6 w-px bg-gray-200"
                                 />
+                            ) : null}
+
+                            {user ? null : (
+                                <div className="flex lg:ml-6">
+                                    <span
+                                        aria-hidden='true'
+                                        className="h-6 w-px bg-gray-200"
+                                    />
+                                </div>
                             )}
 
-                            
+
                         </div>
                     </div>
                 </div>
