@@ -3,9 +3,11 @@
 import { FaCartShopping } from "react-icons/fa6"
 import { Sheet, SheetContent, SheetHeader, SheetTitle, SheetTrigger } from "./ui/sheet"
 import { Separator } from "./ui/separator"
+import { formatPrice } from "@/lib/utils"
 
 const Carts = () => {
   const itemCount = 1
+  const transactionFee = 1
 
   return (
     <Sheet>
@@ -41,7 +43,7 @@ const Carts = () => {
                             <div className="text-sm space-y-1.5">
                                 <div className="flex">
                                     <span className="flex-1">Transaction Fee</span>
-                                    <span>1</span>
+                                    <span>{formatPrice(transactionFee)}</span>
                                 </div>
                             </div>
                         </div>
