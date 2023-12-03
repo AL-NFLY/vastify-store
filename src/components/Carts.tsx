@@ -4,6 +4,8 @@ import { FaCartShopping } from "react-icons/fa6"
 import { Sheet, SheetContent, SheetFooter, SheetHeader, SheetTitle, SheetTrigger } from "./ui/sheet"
 import { Separator } from "./ui/separator"
 import { formatPrice } from "@/lib/utils"
+import Link from "next/link"
+import { buttonVariants } from "./ui/button"
 
 const Carts = () => {
   const itemCount = 1
@@ -51,6 +53,18 @@ const Carts = () => {
                                 </div>
                             </div>
 
+                            <SheetFooter>
+                                <SheetTrigger asChild>
+                                    <Link
+                                        href='/cart'
+                                        className={buttonVariants({
+                                            className: 'w-full',
+                                        })}
+                                    >
+                                        Check out
+                                    </Link>
+                                </SheetTrigger>
+                            </SheetFooter>
                         </div>
                     </>
                 ) : (
