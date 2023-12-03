@@ -1,7 +1,7 @@
 'use client'
 
 import { FaCartShopping } from "react-icons/fa6"
-import { Sheet, SheetContent, SheetHeader, SheetTitle, SheetTrigger } from "./ui/sheet"
+import { Sheet, SheetContent, SheetFooter, SheetHeader, SheetTitle, SheetTrigger } from "./ui/sheet"
 import { Separator } from "./ui/separator"
 import { formatPrice } from "@/lib/utils"
 
@@ -39,13 +39,18 @@ const Carts = () => {
                                     <span className="flex-1">Shipping</span>
                                     <span>Free</span>
                                 </div>
-                            </div>
-                            <div className="text-sm space-y-1.5">
+
                                 <div className="flex">
                                     <span className="flex-1">Transaction Fee</span>
                                     <span>{formatPrice(transactionFee)}</span>
                                 </div>
+
+                                <div className="flex">
+                                    <span className="flex-1">Total</span>
+                                    <span>{formatPrice(transactionFee)}</span>
+                                </div>
                             </div>
+
                         </div>
                     </>
                 ) : (
