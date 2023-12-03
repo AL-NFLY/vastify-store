@@ -8,7 +8,7 @@ import Link from "next/link"
 import { buttonVariants } from "./ui/button"
 
 const Carts = () => {
-  const itemCount = 1
+  const itemCount = 0
   const transactionFee = 1
 
   return (
@@ -67,8 +67,22 @@ const Carts = () => {
                             </SheetFooter>
                         </div>
                     </>
-                ) : (
-                    <></>
+                ) : 
+                (
+                    <div className="flex flex-col min-h-screen h-1/2 items-center justify-center">
+                        Your cart is empty
+                        <SheetTrigger asChild>
+                            <Link
+                                href='/products'
+                                className={buttonVariants({
+                                    variant: 'link',
+                                    size: 'sm',
+                                })}
+                            >
+                                Feel free to check our products!
+                            </Link>
+                        </SheetTrigger>
+                    </div>
                 )}
             </SheetHeader>
         </SheetContent>
