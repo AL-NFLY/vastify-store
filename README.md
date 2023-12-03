@@ -7,9 +7,10 @@ Tech Stack:
 - tRPC (To Be Added)
 
 TODOs:
-- [ ] Add Navbar & its interactivity 
-- [ ] Add Shopping Cart Component
+- [ ] Setup Express Server
 - [ ] Setup Admin Panel
 - [ ] Setup tRPC
 - [ ] Add Account Auth
 - [x] ~~Add Hero section~~
+- [x] ~~Add Navbar & its interactivity~~
+- [x] ~~Add Shopping Cart Component~~
