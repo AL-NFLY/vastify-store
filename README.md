@@ -8,8 +8,8 @@ Tech Stack:
 
 TODOs:
 - [ ] Setup Express Server
-- [ ] Setup Admin Panel
 - [ ] Setup tRPC
+- [ ] Setup Admin Panel
 - [ ] Add Account Auth
 - [x] ~~Add Hero section~~
 - [x] ~~Add Navbar & its interactivity~~
