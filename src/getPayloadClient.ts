@@ -1,5 +1,6 @@
 import dotenv from "dotenv";
 import path from "path"
+import payload from "payload";
 import { InitOptions } from "payload/config";
 
 dotenv.config({
@@ -22,6 +23,21 @@ interface getPayloadClientProps {
 const getPayloadClient = async ({
   initOptions
 }: getPayloadClientProps = {}) => {
+  if(!process.env.PAYLOAD_SECRET) {
+    throw new Error('PAYLOAD_SECRET is missing!')
+  }
+
+  if(cached.client) {
+    return cached.client
+  }
+
+  if(!cached.promise) {
+    cached.promise = payload.init({
+      secret: process.env.PAYLOAD_SECRET,
+      local: initOptions?.express ? false : true,
+      ...(initOptions || {}),
+    })
+  }
 }
 
 export default getPayloadClient
