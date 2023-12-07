@@ -4,6 +4,7 @@ Tech Stack:
 - Next.js 14
 - TailwindCSS
 - Shadcn-ui
+- MongoDB
 - tRPC (To Be Added)
 
 TODOs:
