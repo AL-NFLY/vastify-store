@@ -1,4 +1,4 @@
-An experimental e-commerce project made for me to work with Next.js 14, Shadcn-ui, & PayloadCMS
+An experimental e-commerce project made for me to work with Next.js 14, Shadcn-ui, & PayloadCMS. Once This project is done, it will replace my [Fragrance Fresh](https://fragrance-fresh.vercel.app/) project.
 
 # Vastify Store
 Tech Stack:
