@@ -10,6 +10,7 @@ Tech Stack:
 - tRPC (To Be Added)
 
 TODOs:
+- [ ] Connect MongoDB to PayloadCMS
 - [ ] Setup tRPC
 - [ ] Setup Admin Panel
 - [ ] Add Account Auth
