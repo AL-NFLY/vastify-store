@@ -18,4 +18,5 @@ TODOs:
 - [x] ~~Add Navbar & its interactivity~~
 - [x] ~~Add Shopping Cart Component~~
 - [x] ~~Setup Express Server~~
+- [x] ~~Setup PayloadCMS~~
 - [x] ~~Setup MongoDB~~
