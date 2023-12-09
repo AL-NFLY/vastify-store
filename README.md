@@ -1,4 +1,4 @@
-
+An experimental e-commerce project made for me to work with Next.js 14, Shadcn-ui, & PayloadCMS
 
 # Vastify Store
 Tech Stack:
