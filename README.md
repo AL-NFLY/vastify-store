@@ -9,7 +9,7 @@ An experimental e-commerce project made for me to work with Next.js 14, Shadcn-u
 - Next.js 14
 - TailwindCSS
 - Shadcn-ui
-- MongoDB
+- MongoDB (To Be Added)
 - tRPC (To Be Added)
 
 ## TODOs:
