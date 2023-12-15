@@ -33,7 +33,6 @@ const perks: PerksProps[] = [
 export default function Home() {
   return (
     <>
-      <Navbar />
       <MaxWidthWrapper>
         <div className='py-20 mx-auto flex flex-col text-center items-center max-w-3xl'>
           <h1 className='text-3xl md:text-4xl font-bold'>Vastify Store</h1>
