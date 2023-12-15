@@ -1,5 +1,8 @@
 import Navbar from '@/components/Navbar'
 import { buttonVariants } from '@/components/ui/button'
+import { Input } from '@/components/ui/input'
+import { Label } from '@/components/ui/label'
+import { cn } from '@/lib/utils'
 import Link from 'next/link'
 import React from 'react'
 
@@ -20,6 +23,34 @@ const page = () => {
                 >
                   Already have an account?
                 </Link>
+            </div>
+
+            <div className='grid gap-6'>
+              <form 
+                // onSubmit={}
+              >
+                  <div className='grid gap-y-6'>
+                    <div className='grid gap-y-2'>
+                      <Label htmlFor='email'>EMAIL</Label>
+                      <Input 
+                        className={cn({
+                          'focus-visible:ring-red-500': true
+                        })}
+                        placeholder='name@example.com'
+                      />
+                    </div>
+
+                    <div className='grid gap-y-2'>
+                      <Label htmlFor='password'>PASSWORD</Label>
+                      <Input
+                        className={cn({
+                          'focus-visible:ring-red-500': true
+                        })}
+                        placeholder='password example'
+                      />
+                    </div>
+                  </div>
+              </form>
             </div>
         </div>
     </div>
