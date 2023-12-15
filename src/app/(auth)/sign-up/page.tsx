@@ -1,5 +1,5 @@
 import Navbar from '@/components/Navbar'
-import { buttonVariants } from '@/components/ui/button'
+import { Button, buttonVariants } from '@/components/ui/button'
 import { Input } from '@/components/ui/input'
 import { Label } from '@/components/ui/label'
 import { cn } from '@/lib/utils'
@@ -15,14 +15,6 @@ const page = () => {
                 <h2 className='text-2xl font-semibold'>NEW CLIENT</h2>
                 <p className='text-slate-600'>Create a brand new account</p>
 
-                <Link
-                  href='/sign-in'
-                  className={buttonVariants({
-                    variant: 'link',
-                  })}
-                >
-                  Already have an account?
-                </Link>
             </div>
 
             <div className='grid gap-6'>
@@ -49,6 +41,17 @@ const page = () => {
                         placeholder='password example'
                       />
                     </div>
+
+                    <Button>SIGN UP</Button>
+                    
+                    <Link
+                      href='/sign-in'
+                      className={buttonVariants({
+                        variant: 'link',
+                      })}
+                    >
+                      Already have an account?
+                    </Link>
                   </div>
               </form>
             </div>
