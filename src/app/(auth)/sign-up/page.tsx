@@ -8,8 +8,7 @@ import React from 'react'
 
 const page = () => {
   return (
-    <>
-    <div className='container relative flex flex-col items-center justify-center pt-20 lg:px-0'>
+    <div className='container relative flex flex-col items-center justify-center h-[calc(100vh-72px)] lg:px-0'>
         <div className='flex flex-col mx-auto w-full sm:w-80 justify-center space-y-6'>
             <div className='flex flex-col items-center space-y-2 text-center'>
                 <h2 className='text-2xl font-semibold'>NEW CLIENT</h2>
@@ -57,7 +56,6 @@ const page = () => {
             </div>
         </div>
     </div>
-    </>
   )
 }
 
