@@ -3,10 +3,17 @@ import { Button, buttonVariants } from '@/components/ui/button'
 import { Input } from '@/components/ui/input'
 import { Label } from '@/components/ui/label'
 import { cn } from '@/lib/utils'
+import { useForm } from "react-hook-form";
+import { zodResolver } from "@hookform/resolvers/zod";
+import { z } from "zod";
 import Link from 'next/link'
 import React from 'react'
 
 const page = () => {
+  const { register, handleSubmit, formState } = useForm({
+    // resolver: zodResolver(),
+  }) 
+
   return (
     <div className='container relative flex flex-col items-center justify-center h-[calc(100vh-72px)] lg:px-0'>
         <div className='flex flex-col mx-auto w-full sm:w-80 justify-center space-y-6'>
