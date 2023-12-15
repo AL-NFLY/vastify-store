@@ -1,3 +1,5 @@
+'use client'
+
 import Navbar from '@/components/Navbar'
 import { Button, buttonVariants } from '@/components/ui/button'
 import { Input } from '@/components/ui/input'
@@ -5,14 +7,22 @@ import { Label } from '@/components/ui/label'
 import { cn } from '@/lib/utils'
 import { useForm } from "react-hook-form";
 import { zodResolver } from "@hookform/resolvers/zod";
-import { z } from "zod";
 import Link from 'next/link'
 import React from 'react'
+import { AuthCredentialsValidator, AuthCredentialsValidatorProps } from '@/lib/validators/AuthCredentialsValidator'
 
 const page = () => {
-  const { register, handleSubmit, formState } = useForm({
-    // resolver: zodResolver(),
+  const { 
+    register, 
+    handleSubmit, 
+    formState: { errors },
+  } = useForm<AuthCredentialsValidatorProps>({
+    resolver: zodResolver(AuthCredentialsValidator),
   }) 
+
+  const onSubmit = ({email, password}: AuthCredentialsValidatorProps) => {
+    // send data to server
+  }
 
   return (
     <div className='container relative flex flex-col items-center justify-center h-[calc(100vh-72px)] lg:px-0'>
@@ -25,7 +35,7 @@ const page = () => {
 
             <div className='grid gap-6'>
               <form 
-                // onSubmit={}
+                onSubmit={handleSubmit(onSubmit)}
               >
                   <div className='grid gap-y-6'>
                     <div className='grid gap-y-2'>
