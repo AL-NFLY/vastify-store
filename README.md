@@ -9,14 +9,12 @@ An experimental e-commerce project made for me to work with Next.js 14, Shadcn-u
 - Next.js 14
 - TailwindCSS
 - Shadcn-ui
-- Payload CMS (To Be Added) 
-- MongoDB (To Be Added)
+- Payload CMS  
+- MongoDB 
 - tRPC (To Be Added)
 
 ## TODOs:
-- [ ] Connect MongoDB to PayloadCMS
 - [ ] Setup tRPC
-- [ ] Setup Admin Panel
 - [ ] Add Account Auth
 - [x] ~~Add Hero section~~
 - [x] ~~Add Navbar & its interactivity~~
@@ -24,3 +22,5 @@ An experimental e-commerce project made for me to work with Next.js 14, Shadcn-u
 - [x] ~~Setup Express Server~~
 - [x] ~~Setup PayloadCMS~~
 - [x] ~~Setup MongoDB~~
+- [x] ~~Connect MongoDB to PayloadCMS~~
+- [x] ~~Setup Admin Panel~~
