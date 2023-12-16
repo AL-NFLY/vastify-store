@@ -22,6 +22,7 @@ An experimental e-commerce project made for me to work with Next.js 14, Shadcn-u
 - [x] ~~Setup Express Server~~
 - [x] ~~Setup PayloadCMS~~
 - [x] ~~Setup MongoDB~~
+- [x] ~~Setup Express.js server~~
 - [x] ~~Connect MongoDB to PayloadCMS~~
 - [x] ~~Setup Admin Panel~~
 - [x] ~~Setup tRPC~~
