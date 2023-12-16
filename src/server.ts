@@ -10,7 +10,8 @@ const start = async () => {
         initOptions: {
             express: app,
             onInit:async (cms) => {
-                cms.logger.info(`ADMIN URL ${cms.getAdminURL()}`)
+                cms.logger.info(`URL: http://localhost:${(PORT)}/`)
+                cms.logger.info(`ADMIN URL: ${cms.getAdminURL()}`)
             },
         }
     })
