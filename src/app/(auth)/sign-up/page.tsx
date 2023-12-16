@@ -11,12 +11,12 @@ import Link from 'next/link'
 import React from 'react'
 import { AuthCredentialsValidator, AuthCredentialsValidatorProps } from '@/lib/validators/AuthCredentialsValidator'
 
-const page = () => {
+const Page = () => {
   const { 
     register, 
     handleSubmit, 
     formState: { errors },
-  } = useForm<AuthCredentialsValidatorProps>({
+  } =   useForm<AuthCredentialsValidatorProps>({
     resolver: zodResolver(AuthCredentialsValidator),
   }) 
 
@@ -76,4 +76,4 @@ const page = () => {
   )
 }
 
-export default page
+export default Page
