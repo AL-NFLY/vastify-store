@@ -1,4 +1,5 @@
 # Vastify Store
+![Website Thumbnail](public/images/hero.png)
 An experimental e-commerce project made for me to work with Next.js 14, Shadcn-ui, tRPC, MongoDB & PayloadCMS. This project uses Express.js to decouple the project from Vercel/Next.js environment. Once This project is done, it will replace my [Fragrance Fresh](https://fragrance-fresh.vercel.app/) project.
 
 ## Project Link: 
@@ -15,6 +16,7 @@ An experimental e-commerce project made for me to work with Next.js 14, Shadcn-u
 - tRPC
 
 ## TODOs:
+- [ ] Create & Handle Auth flow
 - [ ] Add Account Auth
 - [x] ~~Add Hero section~~
 - [x] ~~Add Navbar & its interactivity~~
