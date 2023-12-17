@@ -1,7 +1,8 @@
 import express from "express";
+import * as trpcExpress from "@trpc/server/adapters/express";
+
 import getPayloadClient from "./getPayloadClient";
 import { nextApp, nextHandler } from "./next-utils";
-import * as trpcExpress from "@trpc/server/adapters/express";
 import { appRouter } from "./trpc";
 
 const app = express()
