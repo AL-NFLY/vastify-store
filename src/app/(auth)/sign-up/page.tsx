@@ -10,6 +10,7 @@ import { zodResolver } from "@hookform/resolvers/zod";
 import Link from 'next/link'
 import React from 'react'
 import { AuthCredentialsValidator, AuthCredentialsValidatorProps } from '@/lib/validators/AuthCredentialsValidator'
+import { trpc } from '@/trpc/client'
 
 const Page = () => {
   const { 
@@ -20,6 +21,8 @@ const Page = () => {
     resolver: zodResolver(AuthCredentialsValidator),
   }) 
 
+  const { data } = trpc.anyApiRoute.useQuery()
+  
   const onSubmit = ({
     email, 
     password,
