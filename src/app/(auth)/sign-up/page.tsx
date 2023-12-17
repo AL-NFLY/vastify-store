@@ -20,7 +20,10 @@ const Page = () => {
     resolver: zodResolver(AuthCredentialsValidator),
   }) 
 
-  const onSubmit = ({email, password}: AuthCredentialsValidatorProps) => {
+  const onSubmit = ({
+    email, 
+    password,
+  }: AuthCredentialsValidatorProps) => {
     // send data to server
   }
 
