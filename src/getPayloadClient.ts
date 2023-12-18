@@ -1,6 +1,6 @@
 import dotenv from "dotenv";
 import path from "path"
-import payload from "payload";
+import payload, { Payload } from "payload";
 import { InitOptions } from "payload/config";
 
 dotenv.config({
@@ -45,6 +45,7 @@ const getPayloadClient = async ({
     cached.promise = null
     throw error
   }
+  return cached.client
 }
 
 export default getPayloadClient
