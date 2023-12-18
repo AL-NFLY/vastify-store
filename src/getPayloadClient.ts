@@ -22,7 +22,7 @@ interface getPayloadClientProps {
 
 const getPayloadClient = async ({
   initOptions
-}: getPayloadClientProps = {}) => {
+}: getPayloadClientProps = {}): Promise<Payload> => {
   if(!process.env.PAYLOAD_SECRET) {
     throw new Error('PAYLOAD_SECRET is missing!')
   }
