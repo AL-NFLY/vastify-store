@@ -69,6 +69,7 @@ const Page = () => {
                         className={cn({
                           'focus-visible:ring-red-500': true
                         })}
+                        type='password'
                         placeholder='password example'
                       />
                     </div>
