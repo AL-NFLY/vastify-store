@@ -21,11 +21,22 @@ const Page = () => {
     resolver: zodResolver(AuthCredentialsValidator),
   }) 
 
+  const { 
+    mutate, 
+    isLoading 
+  } = trpc.auth.createPayloadUser.useMutation({
+
+  })
+
   const onSubmit = ({
     email, 
     password,
   }: AuthCredentialsValidatorProps) => {
     // send data to server
+    mutate({ 
+      email, 
+      password
+    })
   }
 
   return (
