@@ -55,9 +55,11 @@ const Page = () => {
                   <div className='grid gap-y-6'>
                     <div className='grid gap-y-2'>
                       <Label htmlFor='email'>EMAIL</Label>
-                      <Input 
+                      <Input
+                        id='email'
+                        {...register('email')}
                         className={cn({
-                          'focus-visible:ring-red-500': true
+                          'focus-visible:ring-red-500': errors.email,
                         })}
                         placeholder='name@example.com'
                       />
@@ -66,8 +68,10 @@ const Page = () => {
                     <div className='grid gap-y-2'>
                       <Label htmlFor='password'>PASSWORD</Label>
                       <Input
+                        id='password'
+                        {...register('password')}
                         className={cn({
-                          'focus-visible:ring-red-500': true
+                          'focus-visible:ring-red-500': errors.password,
                         })}
                         type='password'
                         placeholder='password example'
