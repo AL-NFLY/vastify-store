@@ -2,7 +2,7 @@ import React from 'react'
 
 const VerifyEmail = () => {
   return (
-    <div>VerifyEmail</div>
+    <div>Verify Email</div>
   )
 }
 
