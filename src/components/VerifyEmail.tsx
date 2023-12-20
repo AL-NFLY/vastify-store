@@ -7,7 +7,13 @@ interface VerifyEmailProps {
 }
 
 const VerifyEmail = ({ token }: VerifyEmailProps) => {
-
+  const {
+    data,
+    isLoading,
+    isError,
+  } = trpc.auth.verifyEmail.useQuery({
+    token,
+  })
 
   return (
     <div>Verify Email</div>
