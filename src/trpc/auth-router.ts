@@ -43,7 +43,7 @@ export const authRouter = router({
         .input(z.object({
             token: z.string()
         }))
-        .mutation(async ({ input }) => {
+        .query(async ({ input }) => {
             const { token } = input
             
             const payload = await getPayloadClient()
