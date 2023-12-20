@@ -1,7 +1,9 @@
 'use client'
 
 import { trpc } from "@/trpc/client"
+import Link from "next/link"
 import { FaCircleCheck, FaCircleXmark } from "react-icons/fa6"
+import { buttonVariants } from "./ui/button"
 
 interface VerifyEmailProps {
   token: string,
@@ -32,6 +34,14 @@ const VerifyEmail = ({ token }: VerifyEmailProps) => {
         <FaCircleCheck className="h-9 w-9 text-green-600" />
         <h2 className="mt-2 text-2xl font-semibold">EMAIL VERIFIED</h2>
         <p className="text-slate-600">Thank you for verifying your email.</p>
+        <Link
+          className={buttonVariants({
+            className: "mt-4",
+          })}
+          href='/sign-in'
+        >
+        SIGN IN
+        </Link>
       </div>
     )
   }
