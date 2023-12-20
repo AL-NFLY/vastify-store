@@ -13,6 +13,7 @@ import { AuthCredentialsValidator, AuthCredentialsValidatorProps } from '@/lib/v
 import { trpc } from '@/trpc/client'
 import { toast } from 'sonner'
 import { ZodError } from 'zod'
+import { useRouter } from 'next/navigation'
 
 const Page = () => {
   const { 
@@ -22,6 +23,8 @@ const Page = () => {
   } =   useForm<AuthCredentialsValidatorProps>({
     resolver: zodResolver(AuthCredentialsValidator),
   }) 
+
+  const router = useRouter()
 
   const { 
     mutate, 
@@ -39,6 +42,11 @@ const Page = () => {
         
         return
       }
+    },
+
+    onSuccess: ({ sentToEmail }) => {
+      toast.success(`Verification sent to ${sentToEmail}`)
+      router.push('/verify-email?to=' + sentToEmail)
     }
   })
 
