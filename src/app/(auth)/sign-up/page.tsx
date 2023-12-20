@@ -11,6 +11,7 @@ import Link from 'next/link'
 import React from 'react'
 import { AuthCredentialsValidator, AuthCredentialsValidatorProps } from '@/lib/validators/AuthCredentialsValidator'
 import { trpc } from '@/trpc/client'
+import { toast } from 'sonner'
 
 const Page = () => {
   const { 
@@ -25,7 +26,11 @@ const Page = () => {
     mutate, 
     isLoading 
   } = trpc.auth.createPayloadUser.useMutation({
-
+    onError: (error) => {
+      if (error.data?.code === 'CONFLICT') {
+        toast.error('This email is already in use. Sign in instead?')
+      }
+    }
   })
 
   const onSubmit = ({
