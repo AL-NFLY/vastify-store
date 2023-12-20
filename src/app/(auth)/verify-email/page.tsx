@@ -1,3 +1,5 @@
+import VerifyEmail from "@/components/VerifyEmail"
+
 interface PageProps {
     searchParams: {
         [key: string] : string | string[] | undefined
@@ -13,7 +15,7 @@ const VerifyEmailPage = ({ searchParams }: PageProps) => {
             <div className="flex flex-col mx-auto w-full justify-center">
                 {token && typeof token === 'string' ? (
                     <div className="grid gap-6">
-
+                        <VerifyEmail token={token} />
                     </div>
                 ) : (
                     <div className="flex flex-col h-full items-center text-center space-y-2">
