@@ -18,9 +18,9 @@ const VerifyEmail = ({ token }: VerifyEmailProps) => {
 
   if (isError) {
     return (
-      <div className="flex flex-col items-center gap-2">
-        <FaCircleXmark className="h-8 w-8 text-red-600"/>
-        <h3>We encounter an error</h3>
+      <div className="flex flex-col items-center gap-y-2">
+        <FaCircleXmark className="h-9 w-9 text-red-600"/>
+        <h2 className="mt-2 text-2xl font-semibold">WE ENCOUNTERED AN ERROR</h2>
         <p className="text-sm">This token has expired or is not valid!</p>
       </div>
     )
