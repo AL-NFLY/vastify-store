@@ -2,7 +2,7 @@
 
 import { trpc } from "@/trpc/client"
 import Link from "next/link"
-import { FaCircleCheck, FaCircleXmark } from "react-icons/fa6"
+import { FaCircleCheck, FaCircleXmark, FaSpinner } from "react-icons/fa6"
 import { buttonVariants } from "./ui/button"
 
 interface VerifyEmailProps {
@@ -42,6 +42,16 @@ const VerifyEmail = ({ token }: VerifyEmailProps) => {
         >
         SIGN IN
         </Link>
+      </div>
+    )
+  }
+
+  if (isLoading) {
+    return (
+      <div className="flex flex-col items-center justify-center gap-y-2">
+        <FaSpinner className="h-9 w-9 text-slate-600 animate-spin"/>
+        <h2 className="mt-2 text-2xl font-semibold">VERIFYING...</h2>
+        <p className="text-slate-600 text-sm">Please wait, this won&apos;t be long.</p>
       </div>
     )
   }
