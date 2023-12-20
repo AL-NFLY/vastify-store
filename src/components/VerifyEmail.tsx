@@ -1,6 +1,14 @@
-import React from 'react'
+'use client'
 
-const VerifyEmail = () => {
+import { trpc } from "@/trpc/client"
+
+interface VerifyEmailProps {
+  token: string,
+}
+
+const VerifyEmail = ({ token }: VerifyEmailProps) => {
+
+
   return (
     <div>Verify Email</div>
   )
