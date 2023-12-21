@@ -14,6 +14,7 @@ An experimental e-commerce project made for me to work with Next.js 14, Shadcn-u
 - Payload CMS  
 - MongoDB 
 - tRPC
+- cross-env
 
 ## TODOs:
 - [ ] Create & Handle Auth flow
