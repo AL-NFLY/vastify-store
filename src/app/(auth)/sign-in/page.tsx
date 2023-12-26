@@ -40,11 +40,13 @@ const Page = () => {
         // Send user back to prev url
         if (origin) {
             router.push(`/${origin}`)
+            return
         }
 
         // Send user to seller url
         if (isSeller) {
             router.push('/sell')
+            return
         }
 
         router.push('/')
