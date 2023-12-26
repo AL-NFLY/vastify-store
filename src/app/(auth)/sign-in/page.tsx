@@ -33,30 +33,15 @@ const Page = () => {
     mutate, 
     isLoading 
   } = trpc.auth.createPayloadUser.useMutation({
-    onError: (error) => {
-      // Used email error
-      if (error.data?.code === 'CONFLICT') {
-        toast.error('This email is already in use. Sign in instead?')
+    onSuccess: () => {
+        toast.success('Signed in successfully')
+        router.refresh()
 
-        return
-      }
-
-      // Password error
-      if (error instanceof ZodError) {
-        toast.error(error.issues[0].message)
-        
-        return
-      }
-      // Generic error
-      toast.error(
-        'Something went wrong. Please try again.'
-      )
+        // Send user back to prev url
+        if (origin) {
+            router.push(`/${origin}`)
+        }
     },
-
-    onSuccess: ({ sentToEmail }) => {
-      toast.success(`Verification sent to ${sentToEmail}`)
-      router.push('/verify-email?to=' + sentToEmail)
-    }
   })
 
   const onSubmit = ({
