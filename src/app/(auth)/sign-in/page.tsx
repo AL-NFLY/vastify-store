@@ -41,6 +41,13 @@ const Page = () => {
         if (origin) {
             router.push(`/${origin}`)
         }
+
+        // Send user to seller url
+        if (isSeller) {
+            router.push('/sell')
+        }
+
+        router.push('/')
     },
   })
 
