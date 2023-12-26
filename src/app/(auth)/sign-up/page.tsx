@@ -91,6 +91,11 @@ const Page = () => {
                         })}
                         placeholder='name@example.com'
                       />
+                      {errors?.email && (
+                        <p className='text-sm text-red-500'>
+                          {errors.email.message}
+                        </p>
+                      )}
                     </div>
 
                     <div className='grid gap-y-2'>
@@ -104,6 +109,11 @@ const Page = () => {
                         type='password'
                         placeholder='password example'
                       />
+                      {errors?.password && (
+                        <p className='text-sm text-red-500'>
+                          {errors.password.message}
+                        </p>
+                      )}
                     </div>
 
                     <Button>SIGN UP</Button>
