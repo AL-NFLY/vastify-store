@@ -128,6 +128,19 @@ const Page = () => {
                     </Link>
                   </div>
               </form>
+
+              <div className='relative'>
+                <div 
+                    className='absolute flex inset-0 items-center'
+                    aria-hidden='true'
+                    >
+                      <span className='w-full border-t' />
+                </div>
+                <div className='relative flex justify-center text-xs'>
+                      <span className='bg-background p-2 text-slate-600'>OR</span>
+                </div>
+
+              </div>
             </div>
         </div>
     </div>
