@@ -19,7 +19,10 @@ An experimental e-commerce project made for me to work with Next.js 14, Shadcn-u
 ## TODOs:
 - [ ] Create & Handle Auth flow
 - [ ] Handle email verification
-- [ ] Add Account Auth
+- [ ] Handle error messages for auth
+- [ ] Finish sign-up page
+- [ ] Create sign-in page
+- [ ] Finish sign-in page
 - [x] ~~Add Hero section~~
 - [x] ~~Add Navbar & its interactivity~~
 - [x] ~~Add Shopping Cart Component~~
@@ -31,3 +34,4 @@ An experimental e-commerce project made for me to work with Next.js 14, Shadcn-u
 - [x] ~~Setup Admin Panel~~
 - [x] ~~Setup tRPC~~
 - [x] ~~Connect tRPC to Next.js~~
+- [x] ~~Create sign-up page~~
