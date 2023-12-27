@@ -30,7 +30,7 @@ const Page = () => {
   }) 
 
   const { 
-    mutate, 
+    mutate: signIn, 
     isLoading 
   } = trpc.auth.createPayloadUser.useMutation({
     onSuccess: () => {
@@ -64,7 +64,7 @@ const Page = () => {
     password,
   }: AuthCredentialsValidatorProps) => {
     // send data to server
-    mutate({ 
+    signIn({ 
       email, 
       password
     })
