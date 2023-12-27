@@ -21,6 +21,14 @@ const Page = () => {
   const isSeller = searchParams.get('as') === 'seller'
   const origin = searchParams.get('origin') 
 
+  const continueAsSeller = () => {
+    router.push('?as=seller')
+  }
+
+  const continueAsBuyer = () => {
+    router.replace('/sign-in', undefined)
+  }
+
   const { 
     register, 
     handleSubmit, 
