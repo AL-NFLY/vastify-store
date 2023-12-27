@@ -83,7 +83,7 @@ const Page = () => {
         <div className='flex flex-col mx-auto w-full sm:w-80 justify-center space-y-6'>
             <div className='flex flex-col items-center space-y-2 text-center'>
                 <h2 className='text-2xl font-semibold'>REGISTERED CLIENT</h2>
-                <p className='text-slate-600'>Login to your account</p>
+                <p className='text-slate-600'>Login to your {isSeller ? 'seller' : ' '} account</p>
 
             </div>
 
