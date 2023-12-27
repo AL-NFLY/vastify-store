@@ -3,9 +3,12 @@ import MaxWidthWrapper from "./MaxWidthWrapper"
 import NavItems from "./NavItems"
 import { buttonVariants } from "./ui/button"
 import Carts from "./Carts"
+import { getServerSideUser } from "@/lib/payload-utils"
+import { cookies } from "next/headers";
 
-const Navbar = () => {
-  const user = null
+const Navbar = async () => {
+  const nextCookies = cookies()
+  const user = await getServerSideUser(nextCookies)
 
   return (
     <header className="sticky z-50 top-0 inset-x-0 h-1/6">
