@@ -19,6 +19,7 @@ An experimental e-commerce project made for me to work with Next.js 14, Shadcn-u
 ## TODOs:
 - [ ] Create sign-in page
 - [ ] Finish sign-in page
+- [ ] Finish Navbar
 - [x] ~~Add Hero section~~
 - [x] ~~Add Navbar & its interactivity~~
 - [x] ~~Add Shopping Cart Component~~
