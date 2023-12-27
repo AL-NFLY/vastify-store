@@ -154,11 +154,19 @@ const Page = () => {
               </div>
 
               {isSeller ? (
-                <Button>
+                <Button
+                  onClick={continueAsBuyer}
+                  disabled={isLoading}
+                  variant='secondary'
+                >
                   Continue as Customer
                 </Button>
               ) : (
-                <Button>
+                <Button
+                  onClick={continueAsSeller}
+                  disabled={isLoading}
+                  variant='secondary'
+                >
                   Continue as Seller
                 </Button>
               )}
