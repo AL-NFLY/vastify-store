@@ -17,7 +17,6 @@ An experimental e-commerce project made for me to work with Next.js 14, Shadcn-u
 - cross-env
 
 ## TODOs:
-- [ ] Finish sign-up page
 - [ ] Create sign-in page
 - [ ] Finish sign-in page
 - [x] ~~Add Hero section~~
@@ -31,7 +30,7 @@ An experimental e-commerce project made for me to work with Next.js 14, Shadcn-u
 - [x] ~~Setup Admin Panel~~
 - [x] ~~Setup tRPC~~
 - [x] ~~Connect tRPC to Next.js~~
-- [x] ~~Create sign-up page~~
+- [x] ~~Create & Finish sign-up page~~
 - [x] ~~Create & Handle Auth flow~~
 - [x] ~~Handle email verification~~
 - [x] ~~Handle error messages for auth~~
