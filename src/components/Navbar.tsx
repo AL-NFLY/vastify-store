@@ -9,7 +9,7 @@ import UserNav from "./UserNav"
 
 const Navbar = async () => {
   const nextCookies = cookies()
-  const user = await getServerSideUser(nextCookies)
+  const { user } = await getServerSideUser(nextCookies)
 
   return (
     <header className="sticky z-50 top-0 inset-x-0 h-1/6">
@@ -49,7 +49,7 @@ const Navbar = async () => {
                                 />
                             )}
 
-                            {user ? <UserNav /> : (
+                            {user ? <UserNav  /> : (
                                 <Link 
                                     href='/sign-up'
                                     className={buttonVariants({
