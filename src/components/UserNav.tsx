@@ -1,8 +1,9 @@
 'use client'
 
+import Link from "next/link"
 import { User } from "../payload-types"
 import { Button } from "./ui/button"
-import { DropdownMenu, DropdownMenuContent, DropdownMenuTrigger } from "./ui/dropdown-menu"
+import { DropdownMenu, DropdownMenuContent, DropdownMenuItem, DropdownMenuSeparator, DropdownMenuTrigger } from "./ui/dropdown-menu"
 
 const UserNav = ({ user }: { user: User }) => {
   return (
@@ -30,7 +31,21 @@ const UserNav = ({ user }: { user: User }) => {
                     </p>
                 </div>
             </div>
+            <DropdownMenuSeparator />
+
+            <DropdownMenuItem>
+                <Link
+                    href='/seller'
+                >
+                    Seller Dashboard
+                </Link>
+            </DropdownMenuItem>
+
+            <DropdownMenuItem className="cursor-pointer">
+                Log out
+            </DropdownMenuItem>
         </DropdownMenuContent>
+
     </DropdownMenu>
   )
 }
