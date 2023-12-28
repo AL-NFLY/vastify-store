@@ -5,6 +5,7 @@ import { buttonVariants } from "./ui/button"
 import Carts from "./Carts"
 import { getServerSideUser } from "@/lib/payload-utils"
 import { cookies } from "next/headers";
+import UserNav from "./UserNav"
 
 const Navbar = async () => {
   const nextCookies = cookies()
@@ -48,7 +49,7 @@ const Navbar = async () => {
                                 />
                             )}
 
-                            {user ? <p></p> : (
+                            {user ? <UserNav /> : (
                                 <Link 
                                     href='/sign-up'
                                     className={buttonVariants({
