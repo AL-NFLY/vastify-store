@@ -17,8 +17,6 @@ An experimental e-commerce project made for me to work with Next.js 14, Shadcn-u
 - cross-env
 
 ## TODOs:
-- [ ] Create sign-in page
-- [ ] Finish sign-in page
 - [ ] Finish Navbar
 - [x] ~~Add Hero section~~
 - [x] ~~Add Navbar & its interactivity~~
@@ -35,3 +33,4 @@ An experimental e-commerce project made for me to work with Next.js 14, Shadcn-u
 - [x] ~~Create & Handle Auth flow~~
 - [x] ~~Handle email verification~~
 - [x] ~~Handle error messages for auth~~
+- [ ] Create & Finish sign-in page
