@@ -33,4 +33,4 @@ An experimental e-commerce project made for me to work with Next.js 14, Shadcn-u
 - [x] ~~Create & Handle Auth flow~~
 - [x] ~~Handle email verification~~
 - [x] ~~Handle error messages for auth~~
-- [ ] Create & Finish sign-in page
+- [x] ~~Create & Finish sign-in page~~
