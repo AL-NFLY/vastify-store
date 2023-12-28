@@ -1,8 +1,18 @@
 'use client'
 
+import { Button } from "./ui/button"
+import { DropdownMenu, DropdownMenuTrigger } from "./ui/dropdown-menu"
+
 const UserNav = () => {
   return (
-    <div>UserNav</div>
+    <DropdownMenu>
+        <DropdownMenuTrigger
+            className="overflow-visible"
+            asChild
+        >
+            <Button>My Account</Button>
+        </DropdownMenuTrigger>
+    </DropdownMenu>
   )
 }
 
