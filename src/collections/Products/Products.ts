@@ -1,5 +1,6 @@
 import { PRODUCT_CATEGORIES } from '@/config';
 import { CollectionConfig } from 'payload/types';
+import { FaWineGlassEmpty } from 'react-icons/fa6';
 
 export const Products: CollectionConfig = {
     slug: 'products',
@@ -80,6 +81,52 @@ export const Products: CollectionConfig = {
                 {
                     label: 'Denied',
                     value: 'denied',
+                },
+            ],
+        },
+        {
+            name: 'priceId',
+            type: 'text',
+            access: {
+                // Only accessible from backend code
+                create: () => false,
+                read: () => false,
+                update: () => false,
+            },
+            admin: {
+                hidden: true,
+            },
+        },
+        {
+            name: 'stripeId',
+            type: 'text',
+            access: {
+                // Only accessible from backend code
+                create: () => false,
+                read: () => false,
+                update: () => false,
+            },
+            admin: {
+                hidden: true,
+            },
+        },
+        {
+            name: 'images',
+            label: 'Product Image(s)',
+            type: 'array',
+            minRows: 1,
+            maxRows: 4,
+            required: true,
+            labels: {
+                singular: 'Image',
+                plural: 'Images',
+            },
+            fields: [
+                {
+                    name: 'image',
+                    type: 'upload',
+                    relationTo: 'media',
+                    required: true,
                 },
             ],
         },
