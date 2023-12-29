@@ -1,6 +1,5 @@
-import { PRODUCT_CATEGORIES } from '@/config';
+import { PRODUCT_CATEGORIES } from '../../config';
 import { CollectionConfig } from 'payload/types';
-import { FaWineGlassEmpty } from 'react-icons/fa6';
 
 export const Products: CollectionConfig = {
     slug: 'products',
