@@ -10,8 +10,8 @@ export const Products: CollectionConfig = {
 
     },
     fields: [
-        // User relation (hidden)
         {
+            // User relation (hidden)
             name: 'user',
             type: 'relationship',
             relationTo: 'users',
@@ -49,6 +49,39 @@ export const Products: CollectionConfig = {
                 ({ label, value }) => ({ label, value })
             ),
             required: true,
+        },
+        {
+            name: 'product_files',
+            label: 'Product File(s)',
+            type: 'relationship',
+            relationTo: 'product_files',
+            hasMany: false,
+            required: true,
+        },
+        {
+            name: 'approvedForSale',
+            label: 'Product Status',
+            type: 'select',
+            access: {
+                create: ({ req }) => req.user.role === 'admin',
+                read:  ({ req }) => req.user.role === 'admin',
+                update: ({ req }) => req.user.role === 'admin',
+            },
+            defaultValue: 'pending',
+            options: [
+                {
+                    label: 'Pending verification',
+                    value: 'pending',
+                },
+                {
+                    label: 'Approved',
+                    value: 'approved',
+                },
+                {
+                    label: 'Denied',
+                    value: 'denied',
+                },
+            ],
         },
     ],
 }
