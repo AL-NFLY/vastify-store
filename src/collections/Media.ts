@@ -1,4 +1,5 @@
-import { CollectionConfig } from "payload/types";
+import { User } from "@/payload-types";
+import { Access, CollectionConfig } from "payload/types";
 
 export const Media: CollectionConfig = {
     slug: 'media',
@@ -8,6 +9,9 @@ export const Media: CollectionConfig = {
                 return { ...data, user: req.user.id }
             },
         ],
+    },
+    admin: {
+        hidden: ({ user }) => user.role !== 'admin',
     },
     upload: {
         staticURL: '/media',
