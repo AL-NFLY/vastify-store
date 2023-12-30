@@ -35,4 +35,5 @@ An experimental e-commerce project made for me to work with Next.js 14, Shadcn-u
 - [x] ~~Handle error messages for auth~~
 - [x] ~~Create & Finish sign-in page~~
 - [x] ~~Create sign-out logic~~
-- [x] ~~Create & Implement Products Collection ~~
+- [x] ~~Create & Implement Products Collection~~
+- [x] ~~Create & Implement Media Collection~~
