@@ -28,6 +28,16 @@ export const Media: CollectionConfig = {
             },
         ],
     },
+    access: {
+        read: async ({ req }) => {
+            const referer = req.headers.referer
+
+            if (!req.user || !referer?.includes('sell')) {
+                return true
+            }
+            return await isAdminOrHasAccessToImages()({ req })
+        }
+    },
     admin: {
         hidden: ({ user }) => user.role !== 'admin',
     },
