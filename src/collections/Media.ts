@@ -12,6 +12,7 @@ const isAdminOrHasAccessToImages = (): Access => async ({
         return true
 
     return {
+        // Accessable only by image's owner
         user: {
             equals: req.user.id,
         }
@@ -36,7 +37,9 @@ export const Media: CollectionConfig = {
                 return true
             }
             return await isAdminOrHasAccessToImages()({ req })
-        }
+        },
+            delete: isAdminOrHasAccessToImages(),
+            update: isAdminOrHasAccessToImages(),
     },
     admin: {
         hidden: ({ user }) => user.role !== 'admin',
