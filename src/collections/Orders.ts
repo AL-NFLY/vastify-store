@@ -1,10 +1,26 @@
-import { CollectionConfig } from "payload/types";
+import { Access, CollectionConfig } from "payload/types";
+
+const ownedOrder: Access = ({ 
+    req: { user }
+}) => {
+    if (user.role === 'admin')
+        return true
+
+    return  {
+        user: {
+            equals: user?.id
+        },
+    }
+}
 
 export const Orders: CollectionConfig = {
     slug: 'orders',
     admin: {
         useAsTitle: 'Your Orders',
         description: 'A detailed summary of all your orders on Vastify.',
+    },
+    access: {
+        read: ownedOrder,
     },
     fields: [
         {
