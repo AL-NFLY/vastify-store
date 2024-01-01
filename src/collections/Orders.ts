@@ -21,6 +21,9 @@ export const Orders: CollectionConfig = {
     },
     access: {
         read: ownedOrder,
+        create: ({ req }) => req.user.role === 'admin',
+        update: ({ req }) => req.user.role === 'admin',
+        delete: ({ req }) => req.user.role === 'admin',
     },
     fields: [
         {
