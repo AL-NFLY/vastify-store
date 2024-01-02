@@ -1,5 +1,6 @@
 import MaxWidthWrapper from '@/components/MaxWidthWrapper'
 import Navbar from '@/components/Navbar';
+import ProductReel from '@/components/ProductReel';
 import { Button, buttonVariants } from '@/components/ui/button'
 import Link from 'next/link'
 import { IconType } from "react-icons";
@@ -83,6 +84,7 @@ export default function Home() {
               </li>
             ) )}
           </ul>  
+          <ProductReel />
         </MaxWidthWrapper>
       </section>
     </>
