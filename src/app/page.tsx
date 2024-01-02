@@ -57,6 +57,7 @@ export default function Home() {
             </Button>
           </div>
         </div>
+            <ProductReel />
       </MaxWidthWrapper>
 
       <section className='border-t border-gray-200 bg-gray-50'>
@@ -84,7 +85,6 @@ export default function Home() {
               </li>
             ) )}
           </ul>  
-          <ProductReel />
         </MaxWidthWrapper>
       </section>
     </>
