@@ -1,3 +1,4 @@
+import Link from 'next/link'
 import React from 'react'
 
 interface ProductReelProps {
@@ -23,6 +24,14 @@ const ProductReel = (props: ProductReelProps) => {
                         {subtitle}
                     </p>
                 ) : null}
+                {href ? (
+                    <Link
+                        href={href}
+                    >
+                        View our collection
+                    </Link>
+                ) : null
+                }
             </div>
         </div>
     </section>
