@@ -78,7 +78,7 @@ export const ProductFiles: CollectionConfig = {
         beforeChange: [addUser]
     },
     access: {
-
+        read: ownedOrPurchased,
     },
     upload: {
         staticURL: '/product_files',
