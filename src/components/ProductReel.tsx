@@ -1,6 +1,12 @@
 import React from 'react'
 
-const ProductReel = () => {
+interface ProductReelProps {
+    title: string
+    subtitle?: string
+    href?: string
+}
+
+const ProductReel = (props: ProductReelProps) => {
   return (
     <section className='py-12'>
         <div className='md:flex md:items-center md:justify-between mb-4'>
