@@ -17,6 +17,7 @@ An experimental e-commerce project made for me to work with Next.js 14, Shadcn-u
 - cross-env
 
 ## TODOs:
+- [ ] (URGENT) Fix server-side data fetching error between Express.js & Next.js 14
 - [ ] Finish Navbar
 - [x] ~~Add Hero section~~
 - [x] ~~Add Navbar & its interactivity~~
